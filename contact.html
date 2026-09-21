@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brawl Stars Fan Page - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <p id="site-logo">Brawl Stars Fan Page</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact and Feedback</h1>
+    <p>Tell us about your Brawl Stars experience. Fields marked as required must be filled in.</p>
+
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Your message</legend>
+
+        <p>
+          <label for="name">Your name (required)</label>
+          <input type="text" id="name" name="name" placeholder="For example, Aigerim" required>
+        </p>
+
+        <p>
+          <label for="email">Email (required)</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        </p>
+
+        <p>
+          <label for="years">Years you have played Brawl Stars</label>
+          <input type="number" id="years" name="years" min="0" max="10" value="1">
+        </p>
+
+        <p>
+          <label for="start-date">Date you started playing</label>
+          <input type="date" id="start-date" name="start-date">
+        </p>
+
+        <p>
+          <label for="fav-color">Your favorite color</label>
+          <input type="color" id="fav-color" name="fav-color" value="#ffd700">
+        </p>
+
+                <fieldset>
+          <legend>Your platform</legend>
+          <input type="radio" id="platform-ios" name="platform" value="ios">
+          <label for="platform-ios" class="inline">iOS</label>
+          <input type="radio" id="platform-android" name="platform" value="android">
+          <label for="platform-android" class="inline">Android</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Favorite game modes</legend>
+          <input type="checkbox" id="mode-gem" name="modes" value="gem-grab">
+          <label for="mode-gem" class="inline">Gem Grab</label>
+          <input type="checkbox" id="mode-knockout" name="modes" value="knockout">
+          <label for="mode-knockout" class="inline">Knockout</label>
+          <input type="checkbox" id="mode-showdown" name="modes" value="showdown">
+          <label for="mode-showdown" class="inline">Showdown</label>
+        </fieldset>
+
+        <p>
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="feedback">Feedback about the site</option>
+            <option value="question">Question about the game</option>
+            <option value="idea">Idea for a new page</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message">Message (required, up to 500 characters)</label>
+          <textarea id="message" name="message" rows="6" maxlength="500" placeholder="Write your message here" required></textarea>
+        </p>
+
+        <button type="submit">Send message</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Brawl Stars Fan Page. Student project.</p>
+    <p>Unofficial fan site. Brawl Stars is a trademark of Supercell.</p>
+  </footer>
+</body>
+</html>
