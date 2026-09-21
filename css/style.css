@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #1c1b4d;
+  background-image: url("../images/background.jpg.jpeg");
+  background-size: cover;
+  color: #1c1b4d;
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  padding: 1rem 1.5rem;
+  background-color: gold;
+  text-align: center;
+}
+
+main {
+  width: 90%;
+  max-width: 60rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background-color: hsl(210, 40%, 96%);
+}
+
+footer {
+  padding: 1.5rem;
+  background-color: #1c1b4d;
+  color: hsl(210, 40%, 96%);
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border: 4px solid #1c1b4d;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.6em 1.4em;
+  background-color: hsl(210, 40%, 96%);
+  border: 3px solid #1c1b4d;
+  box-shadow: 3px 3px 0 #1c1b4d;
+  color: #1c1b4d;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+
+nav a:hover {
+  background-color: rgb(255, 79, 139);
+  box-shadow: 6px 6px 0 #1c1b4d;
+  transform: translate(-3px, -3px);
+}
+
+nav a.active {
+  background-color: #1c1b4d;
+  color: gold;
+}
+
+.card {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 4px solid #1c1b4d;
+  box-shadow: 6px 6px 0 gold;
+}
+
+blockquote {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-left: 8px solid rgb(255, 79, 139);
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+.source {
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+.media-label {
+  font-weight: 700;
+}
+
+.video-frame {
+  display: block;
+  width: 100%;
+  height: 22rem;
+  border: 4px solid #1c1b4d;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 2px solid #1c1b4d;
+  text-align: left;
+}
+
+thead th {
+  background-color: #1c1b4d;
+  color: gold;
+}
+
+tbody th {
+  background-color: gold;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: rgba(255, 215, 0, 0.25);
+}
+
+tbody tr:hover td {
+  background-color: rgba(255, 79, 139, 0.35);
+}
+
+tfoot th,
+tfoot td {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+fieldset {
+  margin: 0 0 1.5rem;
+  padding: 1.5rem;
+  border: 4px solid #1c1b4d;
+}
+
+fieldset fieldset {
+  border-width: 2px;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: 900;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+label.inline {
+  display: inline;
+  margin-right: 1.5rem;
+  font-weight: 400;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.6rem;
+  background-color: hsl(210, 40%, 96%);
+  border: 3px solid #1c1b4d;
+  color: #1c1b4d;
+  font-family: Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+input[type="color"] {
+  width: 4rem;
+  height: 2.5rem;
+  border: 3px solid #1c1b4d;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: rgba(255, 215, 0, 0.3);
+  outline: 4px solid rgb(255, 79, 139);
+  outline-offset: 2px;
+}
+
+button {
+  padding: 0.75rem 2rem;
+  background-color: gold;
+  border: 3px solid #1c1b4d;
+  box-shadow: 4px 4px 0 #1c1b4d;
+  color: #1c1b4d;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+
+button:hover {
+  background-color: rgb(255, 79, 139);
+  box-shadow: 7px 7px 0 #1c1b4d;
+  transform: translate(-3px, -3px);
+}
+
+button:focus {
+  outline: 4px solid rgb(255, 79, 139);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Arial Black", sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 2.25rem;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+#site-logo {
+  margin: 0 0 0.75rem;
+  font-family: "Arial Black", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.lead {
+  font-size: 1.125rem;
+}
+
+a {
+  color: #1c1b4d;
+  text-decoration-color: rgb(255, 79, 139);
+  text-decoration-thickness: 3px;
+}
+
+a:hover {
+  background-color: rgb(219, 226, 225);
+}
+
+nav li {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .card,
+  fieldset {
+    padding: 1rem;
+  }
+
+  .video-frame {
+    height: 14rem;
+  }
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figure img {
+  width: 100%;
+  max-width: 40rem;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-style: italic;
+}
